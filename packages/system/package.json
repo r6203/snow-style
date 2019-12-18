@@ -1,0 +1,34 @@
+{
+  "name": "@r6203/system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf ./lib",
+    "publish": "yarn run build && yalc publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@r6203/theme": "^0.0.0",
+    "@types/jest": "^24.0.23",
+    "@types/lodash": "^4.14.149",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint": "^6.7.2",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "csstype": "v3.0.0-beta.0"
+  },
+  "peerDependencies": {
+    "@r6203/theme": "^0.0.0",
+    "react": "^16.12.0",
+    "csstype": "v3.0.0-beta.0"
+  }
+}

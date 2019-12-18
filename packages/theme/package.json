@@ -1,0 +1,29 @@
+{
+  "name": "@r6203/theme",
+  "version": "0.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Robin Altay <robin.altay@gmail.com>",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r6203/snow-style.git"
+  },
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf ./lib",
+    "publish": "yarn run build && yalc publish"
+  },
+  "bugs": {
+    "url": "https://github.com/r6203/snow-style/issues"
+  },
+  "homepage": "https://github.com/r6203/snow-style#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint": "^6.7.2"
+  }
+}

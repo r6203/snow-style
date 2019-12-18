@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      //"@r6203/*": ["./node_modules/@r6203/*/src"]
+      "@r6203/*": ["packages/*/src"]
+    }
+    //    "composite": true
+  }
+  //"references": [{"path": "packages/react"}, {"path": "packages/system"}]
+}

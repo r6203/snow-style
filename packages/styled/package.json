@@ -1,0 +1,38 @@
+{
+  "name": "@r6203/styled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf ./lib",
+    "publish": "npm run build && yalc publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@r6203/system": "^1.0.0",
+    "@r6203/theme": "^0.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-react": "^7.17.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "csstype": "v3.0.0-beta.0"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@r6203/system": "^1.0.0",
+    "@r6203/theme": "^0.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
